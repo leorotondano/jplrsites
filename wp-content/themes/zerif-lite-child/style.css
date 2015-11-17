@@ -1,0 +1,85 @@
+/*
+ Theme Name:   Zerif Lite Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Zerif Lite Child
+ Author:       Lrjpsites
+ Author URI:   http://www.jpneto.vitoralves.name/
+ Template:     zerif-lite
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  zerif-lite-child
+*/
+
+
+/* Flexbox container */
+#content {
+   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+   display: -ms-flexbox;      /* TWEENER - IE 10 */
+   display: -webkit-flex;     /* NEW - Chrome */
+   display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+   -webkit-box-orient: vertical;
+   -ms-flex-direction: column;
+   webkit-flex-direction: column;
+   flex-direction: column;
+}
+
+#focus {
+   -webkit-box-ordinal-group: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
+   -moz-box-ordinal-group: 1;      /* OLD - Firefox 19- */
+   -ms-flex-order: 1;              /* TWEENER - IE 10 */
+   -webkit-order: 1;               /* NEW - Chrome */
+   order: 1;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+#latestnews {
+   -webkit-box-ordinal-group: 2;   /* OLD - iOS 6-, Safari 3.1-6 */
+   -moz-box-ordinal-group: 2;      /* OLD - Firefox 19- */
+   -ms-flex-order: 2;              /* TWEENER - IE 10 */
+   -webkit-order: 2;               /* NEW - Chrome */
+   order: 2;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */	
+}
+
+#aboutus {
+   -webkit-box-ordinal-group: 3;   /* OLD - iOS 6-, Safari 3.1-6 */
+   -moz-box-ordinal-group: 3;      /* OLD - Firefox 19- */
+   -ms-flex-order: 3;              /* TWEENER - IE 10 */
+   -webkit-order: 3;               /* NEW - Chrome */
+   order: 3;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+/* #team {
+   -webkit-box-ordinal-group: 5;   
+   -moz-box-ordinal-group: 5;      
+   -ms-flex-order: 5;              
+   -webkit-order: 5;               
+   order: 5;                       
+} */
+.purchase-now {
+   -webkit-box-ordinal-group: 4;   /* OLD - iOS 6-, Safari 3.1-6 */
+   -moz-box-ordinal-group: 4;      /* OLD - Firefox 19- */
+   -ms-flex-order: 4;              /* TWEENER - IE 10 */
+   -webkit-order: 4;               /* NEW - Chrome */
+   order: 4;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.separator-one {
+   -webkit-box-ordinal-group: 2;   /* OLD - iOS 6-, Safari 3.1-6 */
+   -moz-box-ordinal-group: 2;      /* OLD - Firefox 19- */
+   -ms-flex-order: 2;              /* TWEENER - IE 10 */
+   -webkit-order: 2;               /* NEW - Chrome */
+   order: 2;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+#contact {
+   -webkit-box-ordinal-group: 6;   /* OLD - iOS 6-, Safari 3.1-6 */
+   -moz-box-ordinal-group: 6;      /* OLD - Firefox 19- */
+   -ms-flex-order: 6;              /* TWEENER - IE 10 */
+   -webkit-order: 6;               /* NEW - Chrome */
+   order: 6;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+#footer {
+   -webkit-box-ordinal-group: 7;   /* OLD - iOS 6-, Safari 3.1-6 */
+   -moz-box-ordinal-group: 7;      /* OLD - Firefox 19- */
+   -ms-flex-order: 7;              /* TWEENER - IE 10 */
+   -webkit-order: 7;               /* NEW - Chrome */
+   order: 7;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
