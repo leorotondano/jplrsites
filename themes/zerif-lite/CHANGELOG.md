@@ -1,5 +1,98 @@
 
 
+### 1.8.3.7 - 16/03/2016
+
+ Changes: 
+
+
+ * Merge pull request #311 from abaicus/development
+
+!!!Changed CSS selector to more specific ones. Edits added to #309.
+ * Fixed layout issue with pirate forms #313
+ * Fixed google webmaster structure data #187
+ * Fixed small issue with Pirate Forms plugin
+
+
+### 1.8.3.6 - 09/03/2016
+
+ Changes: 
+
+
+ * Added hooks to the theme, using plugin API.
+ * Merge pull request #299 from HardeepAsrani/development
+
+Added hooks to the theme, using plugin API.
+ * #293 New template for a fullwidth page with no title
+ * Merge pull request #309 from abaicus/development
+
+!!!Restyled Contribute tab and fixed responsive and scroll issues.
+
+
+### 1.8.3.4 - 22/01/2016
+
+ Changes: 
+
+
+ * Fixed #276 WP MegaMenu compatible
+ * Fixed #286 Center testimonial setion
+ * Fixed #277 Small issue with search submit in chrome mobile
+ * Fixed #291 Footer messed up when one option is missing
+ * Fixed #289 Syntax error in smooth scroll function
+ * Fixed #287, more tag in latest news section and blog
+
+
+### 1.8.3.3 - 14/01/2016
+
+ Changes: 
+
+
+ * #279, fixed escaping errors from 1.8.3.2 version
+
+
+### 1.8.3.2 - 07/01/2016
+
+ Changes: 
+
+
+ * Escaping.
+ * I added wp_kses_post() function instead esc_html.
+ * Fixed #274 Broken footer
+ * About us section escaping fixed.
+ * Merge pull request #268 from robciucioan/development
+
+Escaping.
+ * Added an option for instagram link in footer
+ * #273 Transport option in customize for live preview changes
+ * #272, Improved user interaction in Customize, by using better descriptions and names
+
+
+### 1.8.3.1 - 14/12/2015
+
+ Changes: 
+
+
+ * Fixed #259, underline selected category item in menu
+
+
+### 1.8.3.0 - 27/11/2015
+
+ Changes: 
+
+
+ * git status! EDD style
+ * Fixed #191 Printing style
+ * Fixed #191 Printing style
+
+
+### 1.8.2.9 - 19/11/2015
+
+ Changes: 
+
+
+ * Menu levels issue
+ * Fixed #237, page templates for static page
+
+
 ### 1.8.2.8 - 11/11/2015
 
  Changes: 

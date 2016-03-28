@@ -5,7 +5,7 @@
 
 function zerif_setup() {    
 	
-	global $content_width;
+    global $content_width;
 	
     if (!isset($content_width)) {
         $content_width = 640;
@@ -31,10 +31,10 @@ function zerif_setup() {
     add_image_size( 'post-thumbnail-large', 750, 500, true ); /* blog thumbnail */
     add_image_size( 'post-thumbnail-large-table', 600, 300, true ); /* blog thumbnail for table */
     add_image_size( 'post-thumbnail-large-mobile', 400, 200, true ); /* blog thumbnail for mobile */
-	add_image_size('zerif_project_photo', 285, 214, true);
+    add_image_size('zerif_project_photo', 285, 214, true);
     add_image_size('zerif_our_team_photo', 174, 174, true);
 
-	/* Register primary menu */
+    /* Register primary menu */
     register_nav_menus(array(
         'primary' => __('Primary Menu', 'zerif-lite'),
     ));
@@ -68,6 +68,9 @@ function zerif_setup() {
 	/* Customizer additions. */
 	require get_template_directory() . '/inc/customizer.php';
 
+	/* Enables user customization via WordPress plugin API. */
+	require get_template_directory() . '/inc/hooks.php';
+
 	/* tgm-plugin-activation */
     require_once get_template_directory() . '/class-tgm-plugin-activation.php';
 
@@ -91,10 +94,16 @@ function zerif_setup() {
          *
          */
         $zerif_required_actions = array(
+			array(
+                "id" => 'zerif-lite-req-ac-frontpage-latest-news',
+                "title" => esc_html__( 'Get the one page template' ,'zerif-lite' ),
+                "description"=> esc_html__( 'If you just installed Zerif Lite, and are not able to see the one page template, you need to go to Settings -> Reading , Front page displays and select "Your latest posts".','zerif-lite' ),
+				"check" => zerif_lite_is_not_latest_posts()
+            ),
             array(
                 "id" => 'zerif-lite-req-ac-install-pirate-forms',
                 "title" => esc_html__( 'Install Pirate Forms' ,'zerif-lite' ),
-                "description"=> esc_html__( 'In the next updates, Zerif Lite\'s default contact form will be removed. Please make sure you install th Pirate Forms plugin to keep your site updated, and experience a smooth transition to the latest version.','zerif-lite' ),
+                "description"=> esc_html__( 'In the next updates, Zerif Lite\'s default contact form will be removed. Please make sure you install the Pirate Forms plugin to keep your site updated, and experience a smooth transition to the latest version.','zerif-lite' ),
                 "check" => defined("PIRATE_FORMS_VERSION"),
                 "plugin_slug" => 'pirate-forms'
             ),
@@ -102,8 +111,7 @@ function zerif_setup() {
                 "id" => 'zerif-lite-req-ac-check-pirate-forms',
                 "title" => esc_html__( 'Check the contact form after installing Pirate Forms' ,'zerif-lite' ),
                 "description"=> esc_html__( "After installing the Pirate Forms plugin, please make sure you check your frontpage contact form is working fine. Also, if you use Zerif Lite in other language(s) please make sure the translation is ok. If not, please translate the contact form again.",'zerif-lite' ),
-            ),
-
+            )
         );
 
 		require get_template_directory() . '/inc/admin/welcome-screen/welcome-screen.php';
@@ -111,6 +119,10 @@ function zerif_setup() {
 }
 
 add_action('after_setup_theme', 'zerif_setup');
+
+function zerif_lite_is_not_latest_posts() {
+	return ('posts' == get_option( 'show_on_front' ) ? true : false);
+}
 
 /**
  * Register widgetized area and update sidebar with default widgets.
@@ -136,6 +148,18 @@ function zerif_widgets_init() {
         'after_title' => '</h1>',
     ));
 
+    register_sidebars( 
+        3, 
+        array(
+            'name'          => __('Footer area %d','zerif-lite'),
+            'id'            => 'zerif-sidebar-footer',
+            'before_widget' => '<aside id="%1$s" class="widget footer-widget-footer %2$s">',
+            'after_widget'  => '</aside>',
+            'before_title'  => '<h1 class="widget-title">',
+            'after_title'   => '</h1>'
+        ) 
+    );
+    
 }
 
 add_action('widgets_init', 'zerif_widgets_init');
@@ -262,11 +286,6 @@ function zerif_register_required_plugins() {
 				'slug' => 'widget-customizer', 
 				'required' => false 
 			),
-			array( 
-				'name'      => 'Login customizer',
-				'slug'      => 'login-customizer',
-				'required'  => false,
-			),
 			array(
 				'name'      => 'Pirate Forms',
 				'slug'      => 'pirate-forms',
@@ -277,11 +296,6 @@ function zerif_register_required_plugins() {
 	else:
 	
 		$plugins = array(
-			array(
-				'name'      => 'Login customizer',
-				'slug'      => 'login-customizer',
-				'required'  => false,
-			),
 			array(
 				'name'      => 'Pirate Forms',
 				'slug'      => 'pirate-forms',
@@ -680,8 +694,6 @@ class zerif_testimonial_widget extends WP_Widget {
     function widget($args, $instance) {
 
         extract($args);
-
-        echo $before_widget;
 		
 		$zerif_accessibility = get_theme_mod('zerif_accessibility');
 		// open link in a new tab when checkbox "accessibility" is not ticked
@@ -742,8 +754,6 @@ class zerif_testimonial_widget extends WP_Widget {
         </div> <!-- / END SINGLE FEEDBACK BOX-->
 
         <?php
-
-        echo $after_widget;
 
     }
 

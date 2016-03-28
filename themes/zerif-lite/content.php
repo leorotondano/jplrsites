@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemtype="http://schema.org/BlogPosting" itemtype="http://schema.org/BlogPosting">
 
 	<?php if ( ! is_search() ) : ?>
 
@@ -57,8 +57,13 @@
 	<div class="entry-content">
 
 		<?php 
+			$ismore = @strpos( $post->post_content, '<!--more-->');
 
-			the_excerpt();
+			if($ismore) {
+				the_content( sprintf( esc_html__('[...]','zerif-lite'), '<span class="screen-reader-text">'.esc_html__('about ', 'zerif-lite').get_the_title().'</span>' ) );
+			} else {
+				the_excerpt();
+			}
 			
 			wp_link_pages( array(
 
