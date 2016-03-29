@@ -83,3 +83,11 @@
    -webkit-order: 7;               /* NEW - Chrome */
    order: 7;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
+
+
+
+/* Customização do template de apresentação da widget EGW hover effect */
+.custom-egw-hover-inline
+{
+	display: inline-block;
+}
