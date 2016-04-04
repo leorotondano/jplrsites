@@ -91,3 +91,19 @@
 {
 	display: inline-block;
 }
+
+.custom-egw-hover-block
+{
+	display: block;
+}
+
+.custom-egw-hover-inline h2
+{
+	margin: -10px 0 150px 0;
+	
+}
+
+.egw_hover_custom_wrapper
+{
+	display: inline-block;	
+}
