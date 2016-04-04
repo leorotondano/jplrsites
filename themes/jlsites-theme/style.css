@@ -12,6 +12,14 @@
  Text Domain:  jlsites-theme
 */
 
+/* ---- BIG TITLE ---- */ 
+.header-content-wrap {
+   padding: 180px 0 140px;
+}
+
+.header-content-wrap .section-header {
+   padding-bottom: 40px;
+}
 
 /* Flexbox container */
 #content {
