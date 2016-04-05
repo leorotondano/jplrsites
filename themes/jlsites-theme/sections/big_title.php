@@ -65,7 +65,7 @@
 
 				if ( !empty($zerif_bigtitle_greenbutton_label) && !empty($zerif_bigtitle_greenbutton_url) ):
 
-					echo '<a href="'.esc_url( $zerif_bigtitle_greenbutton_url ).'" class="btn btn-primary custom-button green-btn">'.wp_kses_post( $zerif_bigtitle_greenbutton_label ).'</a>';
+					echo '<a href="'.esc_url( $zerif_bigtitle_greenbutton_url ).'" class="btn btn-primary custom-button blue-btn">'.wp_kses_post( $zerif_bigtitle_greenbutton_label ).'</a>';
 
 				elseif ( isset( $wp_customize ) ):
 
