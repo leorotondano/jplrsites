@@ -14,11 +14,29 @@
 
 /* ---- BIG TITLE ---- */ 
 .header-content-wrap {
-   padding: 180px 0 140px;
+   background: #26b1ae;
+   padding: 15% 0 10%;
 }
 
 .header-content-wrap .section-header {
-   padding-bottom: 40px;
+    padding-bottom: 40px;
+}
+
+/* --- Botoes --- */
+.header-content-wrap .blue-btn {
+    background: #5647d2;
+}
+
+.header-content-wrap .blue-btn:hover {
+    background: #3b309c;
+}
+
+.header-content-wrap .red-btn {
+    background: #e8442f;
+}
+
+.header-content-wrap .red-btn:hover {
+    background: #c53421;
 }
 
 /* Flexbox container */
