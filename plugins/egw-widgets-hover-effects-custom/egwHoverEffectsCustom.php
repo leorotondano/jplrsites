@@ -78,7 +78,7 @@ class EGW_Hover_Effects_Custom_Widget extends EGW_Hover_Effects_Widget {
 	 */
 	function widget($args, $instance) {
 		echo '<div class="egw_hover_custom_wrapper">';
-		echo '<span class="custom-egw-hover-block">';
+		echo '<span class="custom-egw-hover-external-title">';
 		echo $instance['TituloExterno'];
 		echo '</span>';
 		parent::widget($args, $instance);
