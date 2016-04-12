@@ -35,9 +35,7 @@
 			echo '<h1 class="intro-text zerif_hidden_if_not_customizer"></h1>';
 
 		endif;
-		echo '<div class="section-header">';
-		echo '<h2 class="white-text"><b>Como Trabalhamos</b></h2>';
-		echo '</div>';
+		echo '<br />';
 		echo '<img src="'.get_stylesheet_directory_uri().'/images/como_trabalhamos.jpg" />';
 
 

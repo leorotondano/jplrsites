@@ -12,7 +12,38 @@
  Text Domain:  jlsites-theme
 */
 
+/* ---- HEADER ---- */
+a.navbar-brand {
+   height: 100px;
+}
+
+ul.main-nav-list li.page_item a {
+   line-height: 70px;
+   font-weight: bold;
+}
+
+@media(max-width: 768px) {
+   a.navbar-brand { height: 76px; }
+   ul.main-nav-list li.page_item a { line-height: 30px; font-weight: normal; }
+}
+
+
 /* ---- BIG TITLE ---- */ 
+.header-content-wrap h1.intro-text {
+   font-size: 45px;
+   line-height: 55px;
+}
+@media (max-width: 768px) {
+   .header-content-wrap h1.intro-text { font-size: 41px; line-height: 49px; }
+}
+@media (max-width: 480px) {
+   .header-content-wrap h1.intro-text { font-size: 32px; line-height: 37px; }
+}
+@media (max-width: 320px) {
+    .header-content-wrap h1.intro-text { font-size: 22px; line-height: 30px; }
+}
+
+
 .header-content-wrap {
    background: #26b1ae;
    padding: 15% 0 10%;
@@ -20,6 +51,14 @@
 
 .header-content-wrap .section-header {
     padding-bottom: 40px;
+}
+
+#div_barra_logo {
+   border: 1px solid red;
+   position: relative;
+   top: 0;
+   background-color: yellow;
+   height: 200px;
 }
 
 /* --- Botoes --- */
@@ -32,11 +71,11 @@
 }
 
 .header-content-wrap .red-btn {
-    background: #e8442f;
+    background: #a328a5;
 }
 
 .header-content-wrap .red-btn:hover {
-    background: #c53421;
+    background: #741975;
 }
 
 /* Flexbox container */
@@ -111,13 +150,6 @@
 }
 
 
-/* #INÍCIO# OUR FOCUS SECTION - POR QUE FAZER UM SITE */
-
-@font-face
-{
-	font-family: Billabong;
-	src: url('./fonts/Billabong.ttf');
-}
 
 /* Customização do template de apresentação da widget EGW hover effect */
 .custom-egw-hover-inline
@@ -125,19 +157,18 @@
 	display: inline-block;
 }
 
-.custom-egw-hover-external-title
+.custom-egw-hover-block
 {
 	display: block;
-	margin: 0 0 10px 0;
-	font-family: Billabong;
-	font-size: 26px;
-	color: #4942a9;
+}
+
+.custom-egw-hover-inline h2
+{
+	margin: -10px 0 150px 0;
+	
 }
 
 .egw_hover_custom_wrapper
 {
 	display: inline-block;	
-	margin: 25px 20px;
 }
-
-/* #FIM# OUR FOCUS SECTION - POR QUE FAZER UM SITE */
