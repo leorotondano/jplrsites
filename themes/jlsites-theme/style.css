@@ -151,24 +151,35 @@ ul.main-nav-list li.page_item a {
 
 
 
+/* #INÍCIO# OUR FOCUS SECTION - POR QUE FAZER UM SITE */
+
+@font-face
+{
+	font-family: Billabong;
+	src: url('./fonts/Billabong.ttf');
+}
+  
 /* Customização do template de apresentação da widget EGW hover effect */
 .custom-egw-hover-inline
 {
 	display: inline-block;
 }
-
-.custom-egw-hover-block
+  
+.custom-egw-hover-external-title 
 {
-	display: block;
+  	display: block;
+ 	margin: 0 0 10px 0;
+ 	font-family: Billabong;
+ 	font-size: 26px;
+ 	color: #4942a9;
 }
-
-.custom-egw-hover-inline h2
-{
-	margin: -10px 0 150px 0;
-	
-}
-
+  
 .egw_hover_custom_wrapper
 {
 	display: inline-block;	
+	margin: 25px 20px;
+	margin: -10px 0 150px 0;
 }
+  
+/* #FIM# OUR FOCUS SECTION - POR QUE FAZER UM SITE */ 
+ 
