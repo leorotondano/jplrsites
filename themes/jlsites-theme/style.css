@@ -29,6 +29,14 @@ ul.main-nav-list li.page_item a {
 
 
 /* ---- BIG TITLE ---- */ 
+
+img#logo_banner {
+   width: 100%;
+   height: auto;
+   max-width: 664px;
+   margin-bottom: 6%;
+}
+
 .header-content-wrap h1.intro-text {
    font-size: 45px;
    line-height: 55px;
@@ -46,7 +54,7 @@ ul.main-nav-list li.page_item a {
 
 .header-content-wrap {
    background: #26b1ae;
-   padding: 15% 0 10%;
+   padding: 11% 0 10%;
 }
 
 .header-content-wrap .section-header {
