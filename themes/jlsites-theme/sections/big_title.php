@@ -24,7 +24,7 @@
 
 		echo '<div class="container">';
 
-		echo '<img id="logo_banner" src="http://localhost/jlsites/wp-content/themes/jlsites-theme/images/logomarca_completa.png">';
+		echo '<img id="logo_banner" src="' . get_stylesheet_directory_uri() . '/images/logomarca_completa.png">';
 
 		$zerif_bigtitle_title = get_theme_mod('zerif_bigtitle_title',__('','zerif-lite'));
 
