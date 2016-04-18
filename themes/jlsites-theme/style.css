@@ -179,7 +179,7 @@ img#logo_banner {
  	margin: 0 0 10px 0;
  	font-family: Billabong;
  	font-size: 31px;
- 	color: #00c0f1;
+ 	color: #8FD9AD;
 }
   
 .egw_hover_custom_wrapper
@@ -188,6 +188,23 @@ img#logo_banner {
 	margin: 25px 20px;
 	margin: -10px 5% 50px 5%;
 }
-  
+
+#focus
+{
+	background-color: #3ba666;
+	background-image: linear-gradient(60deg, #4dac71 50%, #3ba666 50%);
+}
+
+#focus h2
+{
+	color: #8FD9AD;
+}
+
+#focus .section-legend
+{
+	color: #8FD9AD;
+}
+
+ 
 /* #FIM# OUR FOCUS SECTION - POR QUE FAZER UM SITE */ 
  
