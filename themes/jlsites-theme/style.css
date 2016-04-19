@@ -22,6 +22,10 @@ ul.main-nav-list li.page_item a {
    font-weight: bold;
 }
 
+#main-nav {
+   z-index: 99999;
+}
+
 @media(max-width: 768px) {
    a.navbar-brand { height: 76px; }
    ul.main-nav-list li.page_item a { line-height: 30px; font-weight: normal; }
