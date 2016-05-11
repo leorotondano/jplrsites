@@ -90,6 +90,34 @@ img#logo_banner {
     background: #741975;
 }
 
+/* ---- HOW WE WORK ---- */
+
+.passo_como_trabalhamos {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.passo_como_trabalhamos img {
+  max-width: 240px;
+}
+
+.bg_caixa_azul {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 60px;
+  padding: 5px 10px;
+  background-color: #019cd2;
+  border-radius: 10px;
+}
+
+.bg_caixa_azul span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+}
 
 /* #INÍCIO# OUR FOCUS SECTION - POR QUE FAZER UM SITE */
 
