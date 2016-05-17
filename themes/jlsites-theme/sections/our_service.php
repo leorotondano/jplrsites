@@ -1,18 +1,93 @@
+<?php wp_enqueue_script( 'wmu-slider',  get_stylesheet_directory_uri() . '/js/jquery.wmuSlider.js'); ?>
+
+<script type="text/javascript">
+	function setMargins() {		
+		width = jQuery(window).width();
+		containerWidth = jQuery(".wmuSliderPagination").width();  
+		leftMargin = (width-containerWidth)/2;    
+		jQuery(".wmuSliderPagination").css("marginLeft", leftMargin);
+	}
+
+	jQuery(document).ready(function() {
+		setMargins();
+		jQuery(window).resize(function() {
+			setMargins();    
+		});
+		jQuery('.wmuSlider').wmuSlider();
+	});			
+</script>
+
 <section class="service" id="service">
-
-<div class="container">
-
 	<!-- SECTION HEADER -->
 
-	<div class="section-header">
-		our services
-	
-	</div>
+	<!--<div class="section-header">
+		OUR SERVICE
+	</div>-->
 
 	<div class="row">
+	
+		<div class="wmuSlider our_service_slider">
+			<div class="wmuSliderWrapper our_service_background">
+				<article>
+					<div class="container our_service_page_container">
+						<div class="col-md-6 slider-left">
+							<h3>Eu tô feliz</h3>
+							<h4>Eu tô alto astral</h4>
+							<p class="top">Tô sorrindo a toa</p>
+							<p class="middle">Curtindo numa boa</p>							
+							<p class="bottom">Pra liberar geral</p>
+						</div>						
+						<div class="col-md-6">
+							Direita
+						</div>						
+					</div>
+				</article>
+				<article>
+					<div class="container our_service_page_container">
+						<div class="col-md-6">
+							Esquerda
+						</div>						
+						<div class="col-md-6 slider-left">
+							<h3>Eu tô feliz</h3>
+							<h4>Eu tô alto astral</h4>
+							<p class="top">Tô sorrindo a toa</p>
+							<p class="middle">Curtindo numa boa</p>							
+							<p class="bottom">Pra liberar geral</p>
+						</div>						
+					</div>
+				</article>
+				<article>
+					<div class="container our_service_page_container">
+						<div class="col-md-6 slider-left">
+							<h3>Eu tô feliz</h3>
+							<h4>Eu tô alto astral</h4>
+							<p class="top">Tô sorrindo a toa</p>
+							<p class="middle">Curtindo numa boa</p>							
+							<p class="bottom">Pra liberar geral</p>
+						</div>						
+						<div class="col-md-6">
+							Direita
+						</div>						
+					</div>
+				</article>
+				<article>
+					<div class="container our_service_page_container">
+						<div class="col-md-6">
+							Esquerda
+						</div>						
+						<div class="col-md-6 slider-left">
+							<h3>Eu tô feliz</h3>
+							<h4>Eu tô alto astral</h4>
+							<p class="top">Tô sorrindo a toa</p>
+							<p class="middle">Curtindo numa boa</p>							
+							<p class="bottom">Pra liberar geral</p>
+						</div>		
+					</div>
+				</article>
+			</div>
 
+			<script>//jQuery('.wmuSlider').wmuSlider();</script>
+		</div>
 	</div>
-
-</div> <!-- / END CONTAINER -->
-
-</section>  <!-- / END FOCUS SECTION -->	
+		
+</section> 
