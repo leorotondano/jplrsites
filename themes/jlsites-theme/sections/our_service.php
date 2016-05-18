@@ -25,63 +25,66 @@
 	</div>-->
 
 	<div class="row">
-	
 		<div class="wmuSlider our_service_slider">
 			<div class="wmuSliderWrapper our_service_background">
-				<article>
-					<div class="container our_service_page_container">
+				<article style="position: absolute; width: 100%; opacity: 0;">
+					<div class="container">
 						<div class="col-md-6 slider-left">
-							<h3>Eu tô feliz</h3>
-							<h4>Eu tô alto astral</h4>
+							<h3>Eu to feliz</h3>
+							<h4>alto astral</h4>
 							<p class="top">Tô sorrindo a toa</p>
 							<p class="middle">Curtindo numa boa</p>							
 							<p class="bottom">Pra liberar geral</p>
 						</div>						
 						<div class="col-md-6">
 							Direita
-						</div>						
+						</div>					
+						 <div class="clearfix"> </div>						
 					</div>
 				</article>
-				<article>
-					<div class="container our_service_page_container">
+				<article style="position: absolute; width: 100%; opacity: 0;">
+					<div class="container">
 						<div class="col-md-6">
 							Esquerda
 						</div>						
 						<div class="col-md-6 slider-left">
 							<h3>Eu tô feliz</h3>
-							<h4>Eu tô alto astral</h4>
+							<h4>alto astral</h4>
 							<p class="top">Tô sorrindo a toa</p>
 							<p class="middle">Curtindo numa boa</p>							
 							<p class="bottom">Pra liberar geral</p>
-						</div>						
+						</div>			
+						 <div class="clearfix"> </div>						
 					</div>
 				</article>
-				<article>
-					<div class="container our_service_page_container">
+				<article style="position: absolute; width: 100%; opacity: 0;">
+					<div class="container">
 						<div class="col-md-6 slider-left">
 							<h3>Eu tô feliz</h3>
-							<h4>Eu tô alto astral</h4>
+							<h4>alto astral</h4>
 							<p class="top">Tô sorrindo a toa</p>
 							<p class="middle">Curtindo numa boa</p>							
 							<p class="bottom">Pra liberar geral</p>
 						</div>						
 						<div class="col-md-6">
 							Direita
-						</div>						
+						</div>			
+						 <div class="clearfix"> </div>						
 					</div>
 				</article>
-				<article>
-					<div class="container our_service_page_container">
+				<article style="position: absolute; width: 100%; opacity: 0;">
+					<div class="container">
 						<div class="col-md-6">
-							Esquerda
+							<div style=""></div>
 						</div>						
 						<div class="col-md-6 slider-left">
 							<h3>Eu tô feliz</h3>
-							<h4>Eu tô alto astral</h4>
+							<h4>alto astral</h4>
 							<p class="top">Tô sorrindo a toa</p>
 							<p class="middle">Curtindo numa boa</p>							
 							<p class="bottom">Pra liberar geral</p>
 						</div>		
+						 <div class="clearfix"> </div>						
 					</div>
 				</article>
 			</div>

@@ -12,6 +12,11 @@
  Text Domain:  jlsites-theme
 */
 
+/*h4, h5, h6,
+h1, h2, h3 {margin: 0;}
+ul, ol {margin: 0;padding:0;}
+p {margin: 0;}*/
+
 /* ---- HEADER ---- */
 a.navbar-brand {
    height: 100px;
@@ -378,7 +383,14 @@ p.bottom{
 {
 	width: 100%;
 	height: 600px;
+	font-size: 14px;	
 }
+
+.our_service_slider div
+{
+	font-size: 14px;	
+}
+
 
 .our_service_background
 {
@@ -389,13 +401,290 @@ p.bottom{
 {
 	height: 600px;
 }
- 
- 
+
+.our_service_slider h4, .our_service_slider h5, .our_service_slider h6, 
+.our_service_slider h1, .our_service_slider h2, .our_service_slider h3 {line-height: 1.1;}
+
+
+
+
  
  
  /* #FIM# SLIDER NOSSO SERVICO */
  
  
+ 
+ 
+ /*--responsive design--*/
+@media (max-width:1366px){
+	.btn {
+		margin-top: 20px;
+	}
+	.slider-left h4 {
+		font-size: 3.3em;
+	}
+	p.top {
+		width: 78%;
+	}
+	p.middle {
+		width: 75%;
+	}
+	p.bottom {
+		width: 60%;
+	}
+}
+@media (max-width:1280px){
+	.btn {
+		margin-top: 20px;
+	}
+	.slider-left h4 {
+		font-size:3em;
+	}
+	p.top {
+		width:83%;
+	}
+	p.middle {
+		width:81%;
+	}
+	p.bottom {
+		width: 65%;
+	}
+	.slider-left h3 {
+		font-size:3em;
+	}
+}
+@media (max-width:1024px){	
+	p.top {
+		font-size:1em;
+		width: 70%;
+	}
+	p.middle {
+		font-size:1em;
+		width: 66%;
+	}
+	p.bottom {
+		font-size:1em;
+		width: 54%;
+	}
+	.slider-left h4 {
+		font-size:2.4em;
+	}
+	.slider-left h3 {
+		font-size:2.8em;
+	}
+	.wmuSliderPrev, .wmuSliderNext {
+		top: 37%;
+	}
+	.wmuSliderPagination {
+		left: 45%;
+	}
+	.desc h4 {
+		line-height: 1.2em;
+	}
+	.links h4 a {
+		font-size: 0.85em;
+	}
+}
+@media (max-width:800px){
+	p.top {
+		font-size: 0.8125em;
+		width:77%;
+	}
+	p.middle {
+		font-size: 0.8125em;
+		width: 70%;
+	}
+	p.bottom {
+		font-size: 0.8125em;
+		width:56%;
+	}
+	.btn {
+		padding: 8px 25px;
+	}
+	.slider-left h4 {
+		font-size:1.9em;
+	}
+	.slider-left h3 {
+		font-size:2.2em;
+	}
+	.wmuSliderPrev, .wmuSliderNext {
+		top: 32%;
+	}
+}
+@media (max-width:768px){
+
+	/*----*/	
+	.wmuSliderPrev, .wmuSliderNext {
+		width: 22px;
+		height: 41px;
+	}
+	.wmuSliderNext {
+		background-position:-66px -44px;
+		right: 0px;
+	}
+	.wmuSliderPrev {
+		background-position: -26px -44px;
+		left: 0px;
+	}
+	.span_1_of_3 p {
+		font-size: 0.8em;
+	}
+	.slider-right img {
+		width: 85% !important;
+	}
+	.btn {
+		margin-top: 20px;
+	}
+
+	p.top {
+		font-size: 0.8125em;
+		width:77%;
+	}
+	p.middle {
+		font-size: 0.8125em;
+		width: 70%;
+	}
+	p.bottom {
+		font-size: 0.8125em;
+		width:56%;
+	}
+	.btn {
+		padding: 8px 25px;
+	}
+	.slider-left h4 {
+		font-size:1.7em;
+	}
+	.slider-left h3 {
+		font-size:2em;
+	}
+	.wmuSliderPrev, .wmuSliderNext {
+		top: 32%;
+	}
+	.wmuSliderPagination {
+		left:40%;
+	}
+	.col_1_of_3.span_1_of_3 {
+		float: left;
+		width: 33%;
+	}
+}
+@media (max-width:640px){
+	.btn {
+		margin-top: 20px;
+	}
+	p.top {
+		font-size: 12px;
+		width: 81%;
+	}
+	p.middle {
+		font-size: 12px;
+		width: 77%;
+	}
+	p.bottom {
+		font-size: 12px;
+		width:63%;
+	}
+	.btn {
+		padding: 8px 20px;
+		font-size: 12px;
+	}
+	.slider-left h4 {
+		font-size:1.4em;
+	}
+	.slider-left h3 {
+		font-size:1.6em;
+	}
+	.wmuSliderPrev, .wmuSliderNext {
+		top: 32%;
+	}
+}
+@media (max-width:480px){
+	p.top {
+		font-size: 12px;
+		width:89%;
+			margin-bottom: 3px;
+	}
+	p.middle {
+		font-size:12px;
+		width:86%;
+		margin-bottom: 3px;
+	}
+	p.bottom {
+		font-size: 12px;
+		width:74%;
+	}
+	.btn {
+		padding: 5px 10px;
+		font-size: 0.8125em;
+	}
+	.btn:hover{
+		text-decoration:none;
+	}
+	.slider-left {
+		float: none;
+		padding-top: 0;
+		width: 100%;
+	}
+	.slider-right {
+		width: 100%;
+		float: none;
+		margin-top: 0em;
+	}
+
+	.wmuSliderPagination {
+		left: 72%;
+		bottom: -10px;
+    }
+	.wmuSliderPrev, .wmuSliderNext {
+		top: 37%;
+	}
+
+	.wmuSlider .wmuSliderWrapper article img {
+		max-width:65%;
+	}
+
+}
+@media (max-width:320px){
+	.btn {
+		margin-top:10px;
+	}
+	p.top {
+		font-size:12px;
+		width:100%;
+	}
+	.btn {
+		padding: 5px 10px;
+		font-size: 0.8125em;
+		width: 57%;
+	}
+	.slider-left {
+		float: none;
+		padding-top: 0;
+		width: 100%;
+	}
+	.slider-left h3 {
+		font-size: 1.05em;
+		margin-bottom: 4px;
+	}
+	.slider-left h4 {
+		font-size: 1.05em;
+		margin: 4px 0px;
+	}
+	.btn {
+		padding: 2px 5px;
+		width: 35%;
+		margin-top: 4px;
+		font-size: 11px !important;
+	}
+	.wmuSliderPagination a {
+		width: 13px;
+		height: 13px;
+		border: 2px solid #414146;
+	}
+
+}
+
+
  
  
  
