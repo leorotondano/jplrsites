@@ -9,9 +9,9 @@
 	}
 
 	jQuery(document).ready(function() {
-		setMargins();
+		//setMargins();
 		jQuery(window).resize(function() {
-			setMargins();    
+			//setMargins();    
 		});
 		jQuery('.wmuSlider').wmuSlider();
 	});			
