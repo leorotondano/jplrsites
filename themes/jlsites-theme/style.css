@@ -352,19 +352,21 @@ p.bottom{
 	padding:0px 10px;
 	width:56%;
 }
+
 .wmuSliderPagination {
     z-index: 2;
     position: absolute;
     bottom: 10px;
-    /* margin-left: auto !important; */
-    /* margin-right: auto !important; */
+	margin-bottom: 10px;
+	margin-left: 0px;
     left: 45%;
     /* right: 0; 
     width:50px; */
 }
+
 .wmuSliderPagination li {
 	float: left;
-	margin: 0 2px 0 0;
+	margin: 0 2px 2px 0;
 	list-style-type: none;
 }
 .wmuSliderPagination a {
