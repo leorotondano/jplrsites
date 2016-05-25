@@ -97,6 +97,11 @@ img#logo_banner {
 
 /* ---- HOW WE WORK ---- */
 
+.howWeWork
+{
+	padding: 100px 0;
+}
+
 .passo_como_trabalhamos {
   display: inline-block;
   margin-bottom: 30px;
