@@ -425,7 +425,7 @@ p.bottom{
  
  /* #INÍCIO# BOTÕES */
  
-.red_green_btn
+.blue_green_btn
 {
 	background-position: 0% 0%;
 	border-bottom-color: rgb(255, 255, 255);
@@ -465,24 +465,24 @@ p.bottom{
 	-webkit-user-select: none;
 } 
 
-#red_btn
+#blue_btn
 {
-	background-color: rgb(233, 102, 86);
+	background-color: #00406E;
 }
 
-#red_btn:hover
+#blue_btn:hover
 {
-	background-color: #cb4332;
+	background-color: #02253E;
 }
 
 #green_btn
 {
-	background-color: #1e9e6b;
+	background-color: #72A033;
 }
 
 #green_btn:hover
 {
-	background-color: #069059;
+	background-color: #445F20;
 }
  
  /* #FIM# BOTÕES */
