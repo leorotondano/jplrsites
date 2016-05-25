@@ -430,6 +430,13 @@ p.bottom{
  
  /* #INÍCIO# BOTÕES */
  
+ #service
+ {
+	background: teal;
+ }
+ 
+ /* teal */
+ 
 .blue_green_btn
 {
 	background-position: 0% 0%;
@@ -488,6 +495,11 @@ p.bottom{
 #green_btn:hover
 {
 	background-color: #445F20;
+}
+
+.buttons-line
+{
+	margin-bottom: 50px;
 }
  
  /* #FIM# BOTÕES */

@@ -89,7 +89,7 @@
 		</div>
 		<div class="container">
 			<?php
-				echo '<div class="buttons">';
+				echo '<div class="buttons buttons-line">';
 					echo '<a href="#howWeWork" class="blue_green_btn" id="blue_btn">Como trabalhamos</a>';
 					echo '<a href="#focus" class="blue_green_btn" id="green_btn">Por quê fazer um site</a>';
 				echo '</div>';
