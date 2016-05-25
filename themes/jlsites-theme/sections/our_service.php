@@ -105,6 +105,19 @@
 				<script>//jQuery('.wmuSlider').wmuSlider();</script>
 			</div>
 		</div>
+		<div class="container">
+			<?php
+				echo '<div class="buttons">';
+					echo '<a href="#howWeWork" class="red_green_btn" id="red_btn">Como trabalhamos</a>';
+					echo '<a href="#focus" class="red_green_btn" id="green_btn">Por quê fazer um site</a>';
+				echo '</div>';
+			?>
+		</div>		
 	</div>
+
+
+
+
+	
 		
 </section> 
