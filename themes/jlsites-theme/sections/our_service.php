@@ -36,6 +36,9 @@
 								<p class="top">Tô sorrindo a toa</p>
 								<p class="middle">Curtindo numa boa</p>							
 								<p class="bottom">Pra liberar geral</p>
+								<button class="btn btn-8 btn-8b visibility-hidden">
+									<a class="popup-with-zoom-anim" href="#small-dialog">Order Now</a>
+								</button>
 							</div>						
 							<div class="col-md-6 slider-right">
 								<img src="<?php echo get_stylesheet_directory_uri() . "/images/nosso_servico/banner-left.png"; ?>" />
@@ -54,6 +57,9 @@
 								<p class="top">Tô sorrindo a toa</p>
 								<p class="middle">Curtindo numa boa</p>							
 								<p class="bottom">Pra liberar geral</p>
+								<button class="btn btn-8 btn-8b visibility-hidden">
+									<a class="popup-with-zoom-anim" href="#small-dialog">Order Now</a>
+								</button>								
 							</div>			
 							 <div class="clearfix"> </div>						
 						</div>
@@ -66,6 +72,9 @@
 								<p class="top">Tô sorrindo a toa</p>
 								<p class="middle">Curtindo numa boa</p>							
 								<p class="bottom">Pra liberar geral</p>
+								<button class="btn btn-8 btn-8b visibility-hidden">
+									<a class="popup-with-zoom-anim" href="#small-dialog">Order Now</a>
+								</button>								
 							</div>						
 							<div class="col-md-6 slider-right">
 								<img src="<?php echo get_stylesheet_directory_uri() . "/images/nosso_servico/banner-left.png"; ?>" />
@@ -84,6 +93,9 @@
 								<p class="top">Tô sorrindo a toa</p>
 								<p class="middle">Curtindo numa boa</p>							
 								<p class="bottom">Pra liberar geral</p>
+								<button class="btn btn-8 btn-8b visibility-hidden">
+									<a class="popup-with-zoom-anim" href="#small-dialog">Order Now</a>
+								</button>								
 							</div>		
 							 <div class="clearfix"> </div>						
 						</div>

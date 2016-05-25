@@ -236,6 +236,12 @@ img#logo_banner {
 button.btn.btn-8.btn-8b {
 	outline: none;
 }
+
+.visibility-hidden
+{
+	visibility: hidden;
+}
+
 .btn {
 	margin: 30px 60px 0;
 	border: none;
