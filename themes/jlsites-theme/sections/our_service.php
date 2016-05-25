@@ -41,7 +41,7 @@
 								</button>
 							</div>						
 							<div class="col-md-6 slider-right">
-								<img src="<?php echo get_stylesheet_directory_uri() . "/images/nosso_servico/banner-left.png"; ?>" />
+								<img src="<?php echo get_stylesheet_directory_uri() . "/images/nosso_servico/banner/1.png"; ?>" />
 							</div>					
 							 <div class="clearfix"> </div>						
 						</div>
@@ -49,7 +49,7 @@
 					<article style="position: absolute; width: 100%; opacity: 0;">
 						<div class="container">
 							<div class="col-md-6 slider-right">
-								<img src="<?php echo get_stylesheet_directory_uri() . "/images/nosso_servico/banner-left.png"; ?>" />
+								<img src="<?php echo get_stylesheet_directory_uri() . "/images/nosso_servico/banner/2.png"; ?>" />
 							</div>						
 							<div class="col-md-6 slider-left">
 								<h3>Eu tô feliz</h3>
@@ -77,29 +77,11 @@
 								</button>								
 							</div>						
 							<div class="col-md-6 slider-right">
-								<img src="<?php echo get_stylesheet_directory_uri() . "/images/nosso_servico/banner-left.png"; ?>" />
+								<img src="<?php echo get_stylesheet_directory_uri() . "/images/nosso_servico/banner/3.png"; ?>" />
 							</div>			
 							 <div class="clearfix"> </div>						
 						</div>
-					</article>
-					<article style="position: absolute; width: 100%; opacity: 0;">
-						<div class="container">
-							<div class="col-md-6 slider-right">
-								<img src="<?php echo get_stylesheet_directory_uri() . "/images/nosso_servico/banner-left.png"; ?>" />
-							</div>						
-							<div class="col-md-6 slider-left">
-								<h3>Eu tô feliz</h3>
-								<h4>alto astral</h4>
-								<p class="top">Tô sorrindo a toa</p>
-								<p class="middle">Curtindo numa boa</p>							
-								<p class="bottom">Pra liberar geral</p>
-								<button class="btn btn-8 btn-8b visibility-hidden">
-									<a class="popup-with-zoom-anim" href="#small-dialog">Order Now</a>
-								</button>								
-							</div>		
-							 <div class="clearfix"> </div>						
-						</div>
-					</article>
+					</article>					
 				</div>
 
 				<script>//jQuery('.wmuSlider').wmuSlider();</script>
