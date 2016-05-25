@@ -31,11 +31,11 @@
 					<article style="position: absolute; width: 100%; opacity: 0;">
 						<div class="container">
 							<div class="col-md-6 slider-left">
-								<h3>Eu to feliz</h3>
-								<h4>alto astral</h4>
-								<p class="top">Tô sorrindo a toa</p>
-								<p class="middle">Curtindo numa boa</p>							
-								<p class="bottom">Pra liberar geral</p>
+								<h3>WebSites</h3>
+								<!-- <h4>alto astral</h4> -->
+								<p class="top">Tenha um website</p>
+								<p class="middle">Conquiste mais clientes</p>							
+								<p class="bottom">Quebre barreiras geográficas</p>
 								<button class="btn btn-8 btn-8b visibility-hidden">
 									<a class="popup-with-zoom-anim" href="#small-dialog">Order Now</a>
 								</button>
@@ -52,11 +52,11 @@
 								<img src="<?php echo get_stylesheet_directory_uri() . "/images/nosso_servico/banner/2.png"; ?>" />
 							</div>						
 							<div class="col-md-6 slider-left">
-								<h3>Eu tô feliz</h3>
-								<h4>alto astral</h4>
-								<p class="top">Tô sorrindo a toa</p>
-								<p class="middle">Curtindo numa boa</p>							
-								<p class="bottom">Pra liberar geral</p>
+								<h3>Marketing Digital</h3>
+								<!-- <h4>alto astral</h4> -->
+								<p class="top">Divulgue nas Redes sociais</p>
+								<p class="middle">Anuncie seus produtos e serviços</p>							
+								<p class="bottom">Disponível 24h</p>
 								<button class="btn btn-8 btn-8b visibility-hidden">
 									<a class="popup-with-zoom-anim" href="#small-dialog">Order Now</a>
 								</button>								
@@ -67,11 +67,11 @@
 					<article style="position: absolute; width: 100%; opacity: 0;">
 						<div class="container">
 							<div class="col-md-6 slider-left">
-								<h3>Eu tô feliz</h3>
-								<h4>alto astral</h4>
-								<p class="top">Tô sorrindo a toa</p>
-								<p class="middle">Curtindo numa boa</p>							
-								<p class="bottom">Pra liberar geral</p>
+								<h3>Design Moderno e Responsivo</h3>
+								<!-- <h4>alto astral</h4> -->
+								<p class="top">Acessível em dispositivos móveis</p>
+								<p class="middle">Otimizado para o Google</p>							
+								<p class="bottom">Conteúdo atualizado por você</p>
 								<button class="btn btn-8 btn-8b visibility-hidden">
 									<a class="popup-with-zoom-anim" href="#small-dialog">Order Now</a>
 								</button>								
