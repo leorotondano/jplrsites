@@ -186,9 +186,8 @@ img#logo_banner {
  
   /* #INÍCIO# SLIDER NOSSO SERVICO */
  
- 
 .index-banner{
-	background:url(./images/nosso_servico/banner.jpg) no-repeat;
+	/* background:url(./images/nosso_servico/banner.jpg) no-repeat; */
 	padding:10px 0;
 }
 .wmuSlider {
@@ -432,7 +431,8 @@ p.bottom{
  
  #service
  {
-	background: teal;
+	/* background: teal; */
+	background-image: url('./images/nosso_servico/background.png');	
  }
  
  /* teal */
@@ -489,12 +489,12 @@ p.bottom{
 
 #green_btn
 {
-	background-color: #72A033;
+	background-color: #55A93A;
 }
 
 #green_btn:hover
 {
-	background-color: #445F20;
+	background-color: #416B33;
 }
 
 .buttons-line
