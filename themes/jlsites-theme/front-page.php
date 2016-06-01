@@ -372,9 +372,9 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 								<?php
 								$zerif_contactus_button_label = get_theme_mod('zerif_contactus_button_label',__('Send Message','zerif-lite'));
 								if( !empty($zerif_contactus_button_label) ):
-									echo '<button class="btn btn-primary custom-button red-btn" type="submit" data-scrollreveal="enter left after 0s over 1s">'.$zerif_contactus_button_label.'</button>';
+									echo '<button class="btn btn-primary btn_com_relevo botao_enviar_email" type="submit" data-scrollreveal="enter left after 0s over 1s">'.$zerif_contactus_button_label.'</button>';
 								elseif ( isset( $wp_customize ) ):
-									echo '<button class="btn btn-primary custom-button red-btn zerif_hidden_if_not_customizer" type="submit" data-scrollreveal="enter left after 0s over 1s"></button>';
+									echo '<button class="btn btn-primary btn_com_relevo botao_enviar_email zerif_hidden_if_not_customizer" type="submit" data-scrollreveal="enter left after 0s over 1s"></button>';
 								endif;
 								?>
 

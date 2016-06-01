@@ -91,8 +91,8 @@
 		<div class="container">
 			<?php
 				echo '<div class="buttons buttons-line">';
-					echo '<a href="#howWeWork" class="blue_green_btn" id="blue_btn" data-scrollreveal="enter left after 0s over 1s">Como trabalhamos</a>';
-					echo '<a href="#focus" class="blue_green_btn" id="green_btn" data-scrollreveal="enter left after 0s over 1s">Por quê fazer um site</a>';
+					echo '<a href="#howWeWork" class="btn_com_relevo blue_green_btn" id="blue_btn" data-scrollreveal="enter left after 0s over 1s">Como trabalhamos</a>';
+					echo '<a href="#focus" class="btn_com_relevo blue_green_btn" id="green_btn" data-scrollreveal="enter left after 0s over 1s">Por quê fazer um site</a>';
 				echo '</div>';
 			?>
 		</div>		

@@ -483,27 +483,45 @@ p.bottom{
 
 #blue_btn
 {
-	background-color: #00406E;
+	background-color: #00406e;
+	border-color: #172754;
 }
 
 #blue_btn:hover
 {
-	background-color: #02253E;
+	background-color: #02253e;
+	border-color: #011d33;
 }
 
 #green_btn
 {
 	background-color: #3A961C;
+	border-color: #014E01;
 }
 
 #green_btn:hover
 {
-	background-color: #1C4C0D;
+	background-color: #1c4c0d;
+	border-color: #012501;
 }
 
 .buttons-line
 {
 	margin-bottom: 50px;
+}
+
+.btn_com_relevo {
+	border-bottom: 3px solid
+}
+
+.botao_enviar_email {
+	background-color: #3276b1;
+    border-color: #285e8e;
+}
+
+.botao_enviar_email:hover {
+	background-color: #195992;
+	border-color: #1b476f;
 }
  
  /* #FIM# BOTÕES */
