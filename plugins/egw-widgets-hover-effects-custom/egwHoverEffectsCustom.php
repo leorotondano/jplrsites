@@ -77,7 +77,7 @@ class EGW_Hover_Effects_Custom_Widget extends EGW_Hover_Effects_Widget {
 	 * \see WP_Widget::widget
 	 */
 	function widget($args, $instance) {
-		echo '<div class="egw_hover_custom_wrapper">';
+		echo '<div class="egw_hover_custom_wrapper" data-scrollreveal="enter left after 0s over 1s">';
 		echo '<span class="custom-egw-hover-external-title">';
 		echo $instance['TituloExterno'];
 		echo '</span>';
