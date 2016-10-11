@@ -1,4 +1,79 @@
 
+### 1.8.4.9 - 30/08/2016
+**Changes:** 
+- Use core function for archive title and description
+- Remove wp_title backward compatibility
+- Fixed issue with background image when using a child theme
+- Redo upsell section using Customizer API
+
+### 1.8.4.8 - 29/08/2016
+**Changes:** 
+- NEW option to change the Clients area title
+- Changed the way locked sections link to pro page
+- Add note in readme.txt regarding the background image
+
+### 1.8.4.7 - 26/08/2016
+**Changes:** 
+- Replace back string for template name
+
+### 1.8.4.6 - 26/08/2016
+**Changes:** 
+- Compatibility with SiteOrigin styles
+- Added back the quote mark in Testimonials section
+- Fixed issue with pagebreaks disappearing on mobile devices
+- Fixed issue with navbar links underline after Pirate Forms submission.
+- Fixed issue with navigation when the blog template is used as homepage
+- Fixed issues with menu on mobile devices
+- Improved parts of the code
+
+### 1.8.4.5 - 19/07/2016
+**Changes:** 
+- Added a number of hooks and filter to make child theme creation easier (The whole list can be found in readme.txt)
+- Fixed some escaping issues
+- Fixed alignment issue on mobile devices in About us section
+
+### 1.8.4.4 - 27/05/2016
+**Changes:** 
+- Small fixes to tgmp
+
+### 1.8.4.3 - 27/05/2016
+**Changes:** 
+
+### 1.8.4.2 - 27/05/2016
+**Changes:** 
+- Improved sanitization and validation of data
+- Updated TGMPA
+- Replaced input fields in About us section and Ribbon section to textareas to allow more content
+- Fixed issue with author name displaying on pages
+- Recommend Adblock Notify and Feedzy RSS plugins on the About Zerif page
+
+
+### 1.8.4.1 - 27/04/2016
+
+ Changes: 
+
+
+ * Fixed how change log is displayed.
+ * Fixed #336 Added style for <q> tag
+ * Fixed #337 Google structured data errors
+
+
+### 1.8.3.9 - 29/03/2016
+
+ Changes: 
+
+
+ * Fixed
+ * Fixed #145 #290 Added support for cyrillic fonts
+ * Option to change the template page to full width site-wide #314
+ * Option to have an active home link in the menu #321
+ * Fixed #145 #290 Added option to use safe font
+ * Fixed #320 Reviews stars issue with latest Woocommerce
+ * Fixed uploading images within Our Focus widgets notworking with Page Builder #324
+ * Fixed uploading images within Our Team widgets not working with Page Builder #324
+ * Fixed uploading images within Testimonials and Clients widgets not working with Page Builder #324
+ * Replace not existing doc with new one #322
+
 
 ### 1.8.3.7 - 16/03/2016
 
@@ -238,7 +313,8 @@ Typo
  Changes: 
 
 
- * Changed new line separator to \n from old mac separator \r.
+ * Changed new line separator to 
+ from old mac separator .
  * Updated about us section to be display in col-lg 4, 6 or 12 depending on what texts are set.
  * Fixed closing tag.
  * Updated contact us form style, error and success messages, made field required.

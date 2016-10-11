@@ -18,7 +18,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
 			if( isset($zerif_contactus_recaptcha_show) && $zerif_contactus_recaptcha_show != 1 && !empty($zerif_contactus_sitekey) && !empty($zerif_contactus_secretkey) ) :
 
-		        $captcha;
+		        $captcha='';
 
 		        if( isset($_POST['g-recaptcha-response']) ){
 
@@ -32,9 +32,11 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 		          
 		        }
 
-		        $response = wp_remote_get( "https://www.google.com/recaptcha/api/siteverify?secret=".$zerif_contactus_secretkey."&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR'] );
+		        $zerif_response = wp_remote_get( "https://www.google.com/recaptcha/api/siteverify?secret=".esc_html($zerif_contactus_secretkey)."&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR'] );
 
-		        if($response['body'].success==false) {
+				$zerif_response_body = json_decode( wp_remote_retrieve_body( $zerif_response ),true);
+
+		        if($zerif_response_body['success'] == false) {
 
 		        	$hasError = true;
 
@@ -110,10 +112,12 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
 				$zerif_contactus_email = get_theme_mod('zerif_contactus_email');
 				
-				if( empty($zerif_contactus_email) ):
-				
-					$emailTo = get_theme_mod('zerif_email');
-				
+				if( empty($zerif_contactus_email) && !is_email($zerif_contactus_email) ):
+
+					$zerif_email = get_theme_mod('zerif_email');
+
+					$emailTo = is_email($zerif_email);
+
 				else:
 					
 					$emailTo = $zerif_contactus_email;
@@ -176,7 +180,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 ?>
 
 </header> <!-- / END HOME SECTION  -->
-
+<?php zerif_after_header_trigger(); ?>
 <div id="content" class="site-content">
 
 <?php
@@ -269,20 +273,18 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 					<div class="section-header">
 
 						<?php
-						
-							global $wp_customize;
 
 							$zerif_contactus_title = get_theme_mod('zerif_contactus_title',__('Get in touch','zerif-lite'));
 							if ( !empty($zerif_contactus_title) ):
 								echo '<h2 class="white-text">'.wp_kses_post( $zerif_contactus_title ).'</h2>';
-							elseif ( isset( $wp_customize ) ):
+							elseif ( is_customize_preview() ):
 								echo '<h2 class="white-text zerif_hidden_if_not_customizer"></h2>';
 							endif;
 
 							$zerif_contactus_subtitle = get_theme_mod('zerif_contactus_subtitle');
 							if(isset($zerif_contactus_subtitle) && $zerif_contactus_subtitle != ""):
 								echo '<div class="white-text section-legend">'.wp_kses_post( $zerif_contactus_subtitle ).'</div>';
-							elseif ( isset( $wp_customize ) ):
+							elseif ( is_customize_preview() ):
 								echo '<h6 class="white-text section-legend zerif_hidden_if_not_customizer">'.$zerif_contactus_subtitle.'</h6>';
 							endif;
 						?>
@@ -369,7 +371,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 								$zerif_contactus_button_label = get_theme_mod('zerif_contactus_button_label',__('Send Message','zerif-lite'));
 								if( !empty($zerif_contactus_button_label) ):
 									echo '<button class="btn btn-primary custom-button red-btn" type="submit" data-scrollreveal="enter left after 0s over 1s">'.$zerif_contactus_button_label.'</button>';
-								elseif ( isset( $wp_customize ) ):
+								elseif ( is_customize_preview() ):
 									echo '<button class="btn btn-primary custom-button red-btn zerif_hidden_if_not_customizer" type="submit" data-scrollreveal="enter left after 0s over 1s"></button>';
 								endif;
 								?>

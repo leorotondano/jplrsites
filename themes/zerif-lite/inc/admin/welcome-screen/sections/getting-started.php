@@ -59,7 +59,7 @@ $customizer_url = admin_url() . 'customize.php' ;
 
 		<h4><?php esc_html_e( 'Change dimensions for footer social icons', 'zerif-lite' ); ?></h4>
 		<p><?php esc_html_e( 'In the below documentation you will find an easy way to change the default dimensions for you social icons.', 'zerif-lite' ); ?></p>
-		<p><a href="<?php echo esc_url( 'http://docs.themeisle.com/article/38-change-dimensions-for-footer-icons/' ); ?>" class="button"><?php esc_html_e( 'View how to do this', 'zerif-lite' ); ?></a></p>
+		<p><a href="<?php echo esc_url( 'http://docs.themeisle.com/article/249-how-to-increase-the-size-of-social-icons-in-zerif' ); ?>" class="button"><?php esc_html_e( 'View how to do this', 'zerif-lite' ); ?></a></p>
 
 		<hr />
 
@@ -205,6 +205,24 @@ $customizer_url = admin_url() . 'customize.php' ;
 		}
 		?>
 		
+		<hr />
+		
+		<!-- Adblock Notify -->
+		<h4>Adblock Notify</h4>
+
+		<?php if ( is_plugin_active( 'adblock-notify-by-bweb/adblock-notify.php' ) ) { ?>
+
+			<p><span class="zerif-lite-w-activated button"><?php esc_html_e( 'Already activated', 'zerif-lite' ); ?></span></p>
+
+			<?php
+		}
+		else { ?>
+
+			<p><a href="<?php echo esc_url( wp_nonce_url( self_admin_url( 'update.php?action=install-plugin&plugin=adblock-notify-by-bweb' ), 'install-plugin_adblock-notify-by-bweb' ) ); ?>" class="button button-primary"><?php esc_html_e( 'Install', 'zerif-lite' ); ?> Adblock Notify</a></p>
+
+			<?php
+		} 
+		?>
 
 	</div>
 
@@ -267,6 +285,26 @@ $customizer_url = admin_url() . 'customize.php' ;
 			<?php
 		}
 		?>
+
+		<hr />
+		
+		<!-- FEEDZY RSS Feeds -->
+		<h4>FEEDZY RSS Feeds</h4>
+
+		<?php if ( is_plugin_active( 'feedzy-rss-feeds/feedzy-rss-feed.php' ) ) { ?>
+
+			<p><span class="zerif-lite-w-activated button"><?php esc_html_e( 'Already activated', 'zerif-lite' ); ?></span></p>
+
+			<?php
+		}
+		else { ?>
+
+			<p><a href="<?php echo esc_url( wp_nonce_url( self_admin_url( 'update.php?action=install-plugin&plugin=feedzy-rss-feeds' ), 'install-plugin_feedzy-rss-feeds' ) ); ?>" class="button button-primary"><?php esc_html_e( 'Install', 'zerif-lite' ); ?> FEEDZY RSS Feeds</a></p>
+
+			<?php
+		}
+		?>
+
 	</div>
 
 	<div class="zerif-lite-clear"></div>

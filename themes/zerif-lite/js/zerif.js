@@ -29,7 +29,7 @@ jQuery(window).load(function() {
 /*** DROPDOWN FOR MOBILE MENU */
 var callback_mobile_dropdown = function () {
 
-    if( jQuery( '.wr-megamenu-container' ).length <= 0 ) {
+    if( jQuery( '.wr-megamenu-container' ).length <= 0 && jQuery( '.mega-menu-wrap' ).length <= 0  ) {
         var navLi = jQuery('#site-navigation li');
         navLi.each(function(){
             if ( jQuery(this).find('ul').length > 0 && !jQuery(this).hasClass('has_children') ){
@@ -46,7 +46,7 @@ var callback_mobile_dropdown = function () {
         });
         navLi.find('a').click(function(){
             jQuery('.navbar-toggle').addClass('collapsed');
-            jQuery('.collapse').removeClass('in');
+            jQuery('#site-navigation .collapse').removeClass('in');
         });
     }
 
@@ -71,7 +71,7 @@ jQuery(document).ready(function() {
             return false;
         }
     });
-    if ( thisOpen == false && (typeof jQuery('.contact-form textarea').val() != 'undefined') && (jQuery('.contact-form textarea').val().length > 0) ) {
+    if ( thisOpen == false && (typeof jQuery('.contact-form textarea') !== 'undefined') && (jQuery('.contact-form textarea').length > 0) && (typeof jQuery('.contact-form textarea').val() !== 'undefined') && (jQuery('.contact-form textarea').val().length > 0) ) {
         thisOpen = true;
         jQuery('.zerif-g-recaptcha').css('display','block').delay(1000).css('opacity','1');
     }
@@ -113,17 +113,12 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 
  =================================== */
 
-
-
 jQuery(document).ready(function() {
 
-
-
     // Sticky Header - http://jqueryfordesigners.com/fixed-floating-elements/
-
-    var top = jQuery('#main-nav').offset().top - parseFloat(jQuery('#main-nav').css('margin-top').replace(/auto/, 0));
-
-
+	if( typeof jQuery('#main-nav') != 'undefined' && typeof jQuery('#main-nav').offset() != 'undefined' ) {
+		var top = jQuery('#main-nav').offset().top - parseFloat(jQuery('#main-nav').css('margin-top').replace(/auto/, 0));
+	}
 
     jQuery(window).scroll(function (event) {
 
@@ -168,10 +163,10 @@ jQuery(document).ready(function(){
         var alink   = this;                 // this button pressed
         // check if there is a section that had same id as the button pressed
         if ( jQuery('section [id*=' + idName + ']').length > 0 && jQuery(window).width() >= 751 ){
-            jQuery('.current').removeClass('current');
+            jQuery('#site-navigation .current').removeClass('current');
             jQuery(alink).parent('li').addClass('current');
         }else{
-            jQuery('.current').removeClass('current');
+            jQuery('#site-navigation .current').removeClass('current');
         }
         if ( jQuery(window).width() >= 751 ) {
             headerHeight = jQuery('#main-nav').height();
@@ -193,7 +188,7 @@ jQuery(document).ready(function(){
 
 jQuery(document).ready(function(){
     var headerHeight;
-    jQuery('.current').removeClass('current');
+    jQuery('#site-navigation .current').removeClass('current');
     jQuery('#site-navigation a[href$="' + window.location.hash + '"]').parent('li').addClass('current');
     if ( jQuery(window).width() >= 751 ) {
         headerHeight = jQuery('#main-nav').height();
@@ -222,7 +217,7 @@ function zerif_lite_scrolled() {
         var isInOneSection = 'no';                              // used for checking if the cursor is in one section or not
 
         // for all sections check if the cursor is inside a section
-        jQuery("section").each( function() {
+        jQuery("section, header").each( function() {
             var thisID = '#' + jQuery(this).attr('id');           // section id
             var zerif_offset = jQuery(this).offset().top;         // distance between top and our section
             var thisHeight  = jQuery(this).outerHeight();         // section height
@@ -232,12 +227,12 @@ function zerif_lite_scrolled() {
             // if position of the cursor is inside of the this section
             if ( zerif_scrollTop >= thisBegin && zerif_scrollTop <= thisEnd ) {
                 isInOneSection = 'yes';
-                jQuery('.current').removeClass('current');
+                jQuery('#site-navigation .current').removeClass('current');
                 jQuery('#site-navigation a[href$="' + thisID + '"]').parent('li').addClass('current');    // find the menu button with the same ID section
                 return false;
             }
             if (isInOneSection == 'no') {
-                jQuery('.current').removeClass('current');
+                jQuery('#site-navigation .current').removeClass('current');
             }
         });
     }
@@ -789,23 +784,25 @@ jQuery( document ).ready( function() {
         itemWrap = $container.find( 'ul' )[0];
       }
       var windowsWidth = window.innerWidth;
-      var itemId = '#' + itemWrap.id;
-      $( itemId ).children( 'li' ).each( function() {
-        if ( this.id == '' ) { return; }
-        var max_deep = self.max_deep( '#'+this.id );
-        var offsetLeft        = $( "#"+this.id ).offset().left;
-        var submenuWidthItem  = $( "#"+this.id ).find( 'ul' ).width();
-        var submenuTotalWidth = max_deep * submenuWidthItem;
-        if( submenuTotalWidth > 0 && windowsWidth < offsetLeft + submenuTotalWidth ) {
-          if( self.options.allItems === true ) {
-            $( '#'+itemWrap.id ).addClass( 'menu-item-open-left-all' );
-            return false;
-          }
-          $( '#'+this.id ).addClass( 'menu-item-open-left' );
-        } else if( $( '#'+this.id ).hasClass( 'menu-item-open-left' ) ) {
-          $( '#'+this.id ).removeClass( 'menu-item-open-left' );
-        }
-      } );
+	  if( typeof itemWrap != 'undefined' ) {
+		  var itemId = '#' + itemWrap.id;
+		  $( itemId ).children( 'li' ).each( function() {
+			if ( this.id == '' ) { return; }
+			var max_deep = self.max_deep( '#'+this.id );
+			var offsetLeft        = $( "#"+this.id ).offset().left;
+			var submenuWidthItem  = $( "#"+this.id ).find( 'ul' ).width();
+			var submenuTotalWidth = max_deep * submenuWidthItem;
+			if( submenuTotalWidth > 0 && windowsWidth < offsetLeft + submenuTotalWidth ) {
+			  if( self.options.allItems === true ) {
+				$( '#'+itemWrap.id ).addClass( 'menu-item-open-left-all' );
+				return false;
+			  }
+			  $( '#'+this.id ).addClass( 'menu-item-open-left' );
+			} else if( $( '#'+this.id ).hasClass( 'menu-item-open-left' ) ) {
+			  $( '#'+this.id ).removeClass( 'menu-item-open-left' );
+			}
+		  } );
+	  }
     };
     ZerifSubmenuOrientation.prototype.max_deep = function ( item ) {
       var maxDepth      = -1, 

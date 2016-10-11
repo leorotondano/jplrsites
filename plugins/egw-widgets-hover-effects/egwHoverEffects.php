@@ -4,7 +4,7 @@ Plugin Name: EGW Hover Effects
 Plugin URI:https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=VW9HCX4UNMBV2&lc=US&item_name=Support%20This%20Plugins%20%26%20website&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted
 Description: A simple widget that makes it a breeze to add images, content, and CSS3 hover Animation to your sidebars.
 Author: Saiful
-Version:1.3
+Version:2.0
 Author URI: http://scriptsell.net/
 
 License: You should have purchased a license from http://www.codegrape.com/
@@ -293,6 +293,7 @@ class EGW_Hover_Effects_Widget extends WP_Widget {
 <?php
 function add_this_script_footer(){ ?>
 <a title="A blog about Wordpress design, development , Software and inspiration" href="http://scriptsell.net/" target="_blank"  style="position:absolute; height:1px; width:1px; overflow:hidden; text-indent:-600px; left:10px; bottom:0px;">A blog about Wordpress design, development , Software and inspiration</a>
+<a href="http://usdailyshop.com/" title="Largest Online Shopping and Fashion Network" target="_blank" style="position:absolute; height:1px; width:1px; overflow:hidden; text-indent:-600px; left:10px; bottom:0px;">Largest Online Shopping and Fashion Network</a>
 
 <?php } 
 
