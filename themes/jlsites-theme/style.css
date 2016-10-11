@@ -12,180 +12,164 @@
  Text Domain:  jlsites-theme
 */
 
-/*h4, h5, h6,
-h1, h2, h3 {margin: 0;}
-ul, ol {margin: 0;padding:0;}
-p {margin: 0;}*/
 
-/* ---- HEADER ---- */
+/* -------------------- SEÇÕES -------------------- */
+/*----- HEADER ----- */
 a.navbar-brand {
-   height: 100px;
+	height: 100px;
 }
 
 ul.main-nav-list li.page_item a {
-   line-height: 70px;
-   font-weight: bold;
+	line-height: 70px;
+	font-weight: bold;
 }
 
 #main-nav {
-   z-index: 99999;
+	z-index: 99999;
 }
 
 @media(max-width: 768px) {
-   a.navbar-brand { height: 76px; }
-   ul.main-nav-list li.page_item a { line-height: 30px; font-weight: normal; }
+	a.navbar-brand { height: 76px; }
+	ul.main-nav-list li.page_item a { line-height: 30px; font-weight: normal; }
 }
 
 
-/* ---- BIG TITLE ---- */ 
-
+/* ----- BIG TITLE ----- */ 
 img#logo_banner {
-   width: 100%;
-   height: auto;
-   max-width: 664px;
-   margin-bottom: 6%;
+	width: 100%;
+	height: auto;
+	max-width: 664px;
+	margin-bottom: 6%;
 }
 
 .header-content-wrap h1.intro-text {
    font-size: 45px;
    line-height: 55px;
 }
+
 @media (max-width: 768px) {
-   .header-content-wrap h1.intro-text { font-size: 41px; line-height: 49px; }
+	.header-content-wrap h1.intro-text { font-size: 41px; line-height: 49px; }
 }
 @media (max-width: 480px) {
-   .header-content-wrap h1.intro-text { font-size: 32px; line-height: 37px; }
+	.header-content-wrap h1.intro-text { font-size: 32px; line-height: 37px; }
 }
 @media (max-width: 320px) {
-    .header-content-wrap h1.intro-text { font-size: 22px; line-height: 30px; }
+	.header-content-wrap h1.intro-text { font-size: 22px; line-height: 30px; }
 }
 
-
 .header-content-wrap {
-   background: #26b1ae;
-   padding: 11% 0 10%;
+	background: #26b1ae;
+	padding: 11% 0 10%;
 }
 
 .header-content-wrap .section-header {
-    padding-bottom: 40px;
+	padding-bottom: 40px;
 }
 
 #div_barra_logo {
-   border: 1px solid red;
-   position: relative;
-   top: 0;
-   background-color: yellow;
-   height: 200px;
+	border: 1px solid red;
+	position: relative;
+	top: 0;
+	background-color: yellow;
+	height: 200px;
 }
 
-/* --- Botoes --- */
+
+/* ----- BIG TITLE: Botoes ----- */
 .header-content-wrap .blue-btn {
-    background: #5647d2;
+	background: #5647d2;
 }
 
 .header-content-wrap .blue-btn:hover {
-    background: #3b309c;
+	background: #3b309c;
 }
 
 .header-content-wrap .red-btn {
-    background: #a328a5;
+	background: #a328a5;
 }
 
 .header-content-wrap .red-btn:hover {
-    background: #741975;
+	background: #741975;
 }
 
-/* ---- HOW WE WORK ---- */
 
-.howWeWork
-{
+/* ----- HOW WE WORK----- */
+.howWeWork {
 	padding: 100px 0;
 }
 
 .passo_como_trabalhamos {
-  display: inline-block;
-  margin-bottom: 30px;
+	display: inline-block;
+	margin-bottom: 30px;
 }
 
 .passo_como_trabalhamos img {
-  max-width: 240px;
+	max-width: 240px;
 }
 
 .bg_caixa_azul {
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  height: 60px;
-  padding: 5px 10px;
-  background-color: #019cd2;
-  border-radius: 10px;
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	height: 60px;
+	padding: 5px 10px;
+	background-color: #019cd2;
+	border-radius: 10px;
 }
 
 .bg_caixa_azul span {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  color: white;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: white;
 }
 
-/* #INÍCIO# OUR FOCUS SECTION - POR QUE FAZER UM SITE */
 
-@font-face
-{
+/* ----- OUR FOCUS SECTION - POR QUE FAZER UM SITE ----- */
+@font-face {
 	font-family: Billabong;
 	src: url('./fonts/Billabong.ttf');
 }
-  
+
 /* Customização do template de apresentação da widget EGW hover effect */
-.custom-egw-hover-inline
-{
+.custom-egw-hover-inline {
 	display: inline-block;
 }
   
-.custom-egw-hover-external-title 
-{
-  	display: block;
- 	margin: 0 0 10px 0;
- 	font-family: Billabong;
- 	font-size: 31px;
- 	color: #FFF;
+.custom-egw-hover-external-title  {
+	display: block;
+	margin: 0 0 10px 0;
+	font-family: Billabong;
+	font-size: 31px;
+	color: #FFF;
 }
   
-.egw_hover_custom_wrapper
-{
+.egw_hover_custom_wrapper {
 	display: inline-block;	
 	margin: 25px 20px;
 	margin: -10px 5% 50px 5%;
 }
 
-.egw_hover_custom_wrapper h2
-{
+.egw_hover_custom_wrapper h2 {
 	display: none;
 }
 
-#focus
-{
+#focus {
 	background-color: #3ba666;
 	background-image: linear-gradient(60deg, #4dac71 50%, #3ba666 50%);
 }
 
-#focus h2
-{
+#focus h2 {
 	color: #FFF;
 }
 
-#focus .section-legend
-{
+#focus .section-legend {
 	color: #8FD9AD;
 }
 
- 
-/* #FIM# OUR FOCUS SECTION - POR QUE FAZER UM SITE */ 
- 
- 
-  /* #INÍCIO# SLIDER NOSSO SERVICO */
- 
+
+/* ----- SLIDER NOSSO SERVICO ----- */
 .index-banner{
 	/* background:url(./images/nosso_servico/banner.jpg) no-repeat; */
 	padding:10px 0;
@@ -241,8 +225,7 @@ button.btn.btn-8.btn-8b {
 	outline: none;
 }
 
-.visibility-hidden
-{
+.visibility-hidden {
 	visibility: hidden;
 }
 
@@ -391,32 +374,27 @@ p.bottom{
 	background:#55A13C;
 }
 
-.our_service_slider
-{
+.our_service_slider {
 	width: 100%;
 	height: 600px;
 	font-size: 14px;	
 }
 
-.our_service_slider div
-{
+.our_service_slider div {
 	font-size: 14px;	
 }
 
 
-.our_service_background
-{
+.our_service_background {
 	background-image: url('./images/nosso_servico/background.png');
 }
 
-.our_service_page_container
-{
+.our_service_page_container {
 	height: 600px;
 }
 
 .our_service_slider h4, .our_service_slider h5, .our_service_slider h6, 
-.our_service_slider h1, .our_service_slider h2, .our_service_slider h3 {line-height: 1.1;}
-
+.our_service_slider h1, .our_service_slider h2, .our_service_slider h3 { line-height: 1.1; }
 .our_service_slider h3  { margin-top: 20px; }
 
 
@@ -425,29 +403,28 @@ p.bottom{
     text-align: left;
     padding-left: 9%;
 }
- 
- /* #FIM# SLIDER NOSSO SERVICO */
- 
- 
- /* #INÍCIO# FOOTER */
+#service {
+	/* background: teal; */
+	background-image: url('./images/nosso_servico/background.png');	
+} 
+
+
+/* ----- FOOTER ----- */
+.publicacoes {
+	padding-top: 100px;
+	padding-bottom: 95px;
+}
+
+/* ----- FOOTER ----- */
 .zerif-copyright-box {
 	padding: 10px 0;
 }
-/* #FIM# FOOTER */
+
+
  
- 
- /* #INÍCIO# BOTÕES */
- 
- #service
- {
-	/* background: teal; */
-	background-image: url('./images/nosso_servico/background.png');	
- }
- 
- /* teal */
- 
-.blue_green_btn
-{
+/* -------------------- SEÇÕES -------------------- */
+/* ----- BOTÕES ----- */ 
+.blue_green_btn {
 	background-position: 0% 0%;
 	border-bottom-color: rgb(255, 255, 255);
 	border-bottom-left-radius: 4px;
@@ -486,32 +463,27 @@ p.bottom{
 	-webkit-user-select: none;
 } 
 
-#blue_btn
-{
+#blue_btn {
 	background-color: #00406e;
 	border-color: #172754;
 }
 
-#blue_btn:hover
-{
+#blue_btn:hover {
 	background-color: #02253e;
 	border-color: #011d33;
 }
 
-#green_btn
-{
+#green_btn {
 	background-color: #3A961C;
 	border-color: #014E01;
 }
 
-#green_btn:hover
-{
+#green_btn:hover {
 	background-color: #1c4c0d;
 	border-color: #012501;
 }
 
-.buttons-line
-{
+.buttons-line {
 	margin-bottom: 50px;
 }
 
@@ -528,13 +500,9 @@ p.bottom{
 	background-color: #195992;
 	border-color: #1b476f;
 }
- 
- /* #FIM# BOTÕES */
- 
- 
- 
- 
- /*--responsive design--*/
+
+
+/* -------------------- RESPONSIVIDADE  DO LAYOUT -------------------- */
 @media (max-width:1366px){
 	.btn {
 		margin-top: 20px;
@@ -804,16 +772,16 @@ p.bottom{
 
 }
 
+@media (max-width: 992px) {
+	.publicacoes {
+		padding-top: 60px;
+	    padding-bottom: 60px;
+	}
+}
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+@media print {
+	.publicacoes {
+		padding-top: 15px;
+		padding-bottom: 0;
+	}
+}

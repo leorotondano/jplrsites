@@ -1,0 +1,205 @@
+/* ---- SLIDER NOSSO SERVICO ---- */
+.index-banner {
+	/* background:url(./images/nosso_servico/banner.jpg) no-repeat; */
+	padding:10px 0;
+}
+.wmuSlider {
+	position: relative;
+	overflow: hidden;
+	/* padding-bottom: 50px; */
+}
+.wmuSlider .wmuSliderWrapper article {
+	position: relative;
+	text-align: center;
+}
+.wmuSlider .wmuSliderWrapper article img {
+	max-width: 75%;
+	width: auto;
+	height: auto;
+	display:block;
+	margin:0 auto 10% auto;
+}
+.wmuGallery .wmuGalleryImage {
+	position: relative;
+	text-align: center;
+}
+.wmuGallery .wmuGalleryImage img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+.wmuGallery .wmuGalleryImage {
+	margin-bottom: 10px;
+}
+.wmuSliderPrev, .wmuSliderNext {
+	position: absolute;
+	width: 46px;
+	height: 100px;
+	text-indent: -9999px;
+	background:url(./images/nosso_servico/img-sprite.png)no-repeat;
+	top:40%;
+	z-index: 2;
+	cursor: pointer;
+}
+.wmuSliderPrev {
+	background-position: -15px -20px;
+	left: 0px;
+}
+.wmuSliderNext {
+	background-position: -52px -10px;
+	right: 0px;
+}
+button.btn.btn-8.btn-8b {
+	outline: none;
+}
+
+.visibility-hidden
+{
+	visibility: hidden;
+}
+
+.btn {
+	margin: 30px 60px 0;
+	border: none;
+	font-family: inherit;
+	color:#fff;
+	background: none;
+	cursor: pointer;
+	padding:10px 30px;
+	display: inline-block;
+	border-bottom: 3px solid #55A13C;
+	letter-spacing: 1px;
+	outline: none;
+	float:right;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn1 {
+	margin:30px 0;
+	border: none;
+	font-family: inherit;
+	color:#fff;
+	background: none;
+	cursor: pointer;
+	padding:8px 20px;
+	display: inline-block;
+	border-bottom: 3px solid #55A13C;
+	letter-spacing: 1px;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn-8 {
+	display: block;
+	background: #000;
+	font-size:0.99em;
+	font-family: "Century Gothic",Arial, Helvetica, sans-serif;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.btn-8b a:hover {
+	color: #fff;
+	text-decoration:none;
+	outline: none;
+}
+.btn-8 a{
+	color: #fff;
+	outline: none;
+}
+.slider-left{
+	float: left;
+	padding-top:6%;
+	width: 47.5%;
+}
+.slider-left h3{
+	font-size:3.5em;
+	color:#fff;
+	background:#55A13C;
+	font-family: "Century Gothic";
+	text-transform:uppercase;
+	margin-bottom:10px;
+	width:70%;
+	font-weight:600;
+	float:none;
+}
+.slider-left h4{
+	font-size:3.5em;
+	color:#fff;
+	background:#55A13C;
+	font-family: "Century Gothic";
+	text-transform:uppercase;
+	font-weight:600;
+	margin-bottom:10px;
+	width:90%;
+}
+.slider-right{
+	width:52.5%;
+	float:left;
+	margin-top: 1em;
+}
+p.top{
+	color:#fff;
+	font-size:1.5em;
+	line-height:1.5em;
+	font-family: "Century Gothic";
+	background:#414146;
+	text-align:left;
+	padding:0px 10px;
+	width:68%;
+	margin-bottom:1px;
+}
+p.middle{
+	color:#fff;
+	font-size:1.5em;
+	line-height:1.5em;
+	font-family: "Century Gothic";
+	background:#414146;
+	text-align:left;
+	padding:0px 10px;
+	width:64%;
+	margin-bottom:1px;
+}
+p.bottom{
+	color:#fff;
+	font-size:1.5em;
+	line-height:1.5em;
+	font-family: "Century Gothic";
+	background:#414146;
+	text-align:left;
+	padding:0px 10px;
+	width:56%;
+}
+
+.wmuSliderPagination {
+    z-index: 2;
+    position: absolute;
+    bottom: 10px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+    left: 45%;
+    /* right: 0; 
+    width:50px; */
+}
+
+.wmuSliderPagination li {
+	float: left;
+	margin: 0 2px 2px 0;
+	list-style-type: none;
+}
+.wmuSliderPagination a {
+	display: block;
+	text-indent: -9999px;
+	width:24px;
+	height:24px;
+	background:#414146;
+	border: 3px solid #414146;
+}
+.wmuSliderPagination a.wmuActive {
+	background:#55A13C;
+}

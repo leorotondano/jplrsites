@@ -245,6 +245,9 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
 	endif;
 
+	/* PUBLICAÇÕES */
+	get_template_part( 'sections/publicacoes' );
+
 	/* RIBBON WITH RIGHT SIDE BUTTON */
 
 	get_template_part( 'sections/ribbon_with_right_button' );
