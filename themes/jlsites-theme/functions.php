@@ -27,4 +27,29 @@
 	}
 	add_action('widgets_init', 'jlsites_widgets_init');
 
+	// -------- Custom Controls -------- //
+
+	function jlsites_customize_register($wp_customize) {
+
+		$wp_customize->add_section('jlsites_controls', array(
+			'title' => __('JLSites Controls', 'jlsites'),
+			'priority' => 100
+		) );
+
+		$wp_customize->add_setting('jlsites_has_publicacoes_setting', array(
+			'default' => false,
+			'transport' => 'refresh'
+		) );
+
+		$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'jlsites_has_publicacoes_control', array(
+			'label' => __('Exibir Publicações?', 'jlsites'),
+			'section' => 'jlsites_controls',
+			'settings' => 'jlsites_has_publicacoes_setting',
+			'type' => 'checkbox'
+		) ) );
+
+	}
+
+	add_action('customize_register', 'jlsites_customize_register');
+
 ?>

@@ -1,3 +1,4 @@
+<?php if(get_theme_mod('jlsites_has_publicacoes_setting')): ?>
 <section class="publicacoes" id="publicacoes">
 	<div class="container">
 
@@ -19,3 +20,4 @@
 
 	</div> <!-- / END CONTAINER -->
 </section> <!-- END ABOUT US SECTION -->
+<?php endif; ?>
